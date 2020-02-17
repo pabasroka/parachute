@@ -4,23 +4,91 @@ body{
     font-family: 'Rubik Regular';
 }
 
+/*================ NAVBAR =============*/
+.navigation__list a{position: relative; z-index: 1;}
+.navigation__list a::after{
+  content: '';
+  position: absolute;
+  background: red;
+  width: 50vw;
+  height: 20px;
+  z-index: -1;
+  transition: all .5s ease-in-out;
+  will-change: transform;
+}
+.navigation__list a:hover::after{
+  transform: translateX(-100%);
+  z-index: -1;
+  overflow: hidden;
+}
+.navigation__list a:hover{
+  color: rgba(0, 0, 0, .1);
+}
 
-/* width *
+
+
+/*================ IMG =============*/
+
+.img{
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+    border-radius: 2px;
+    opacity: 0.97;
+}
+.img:hover{
+    opacity: 1;
+    transition: all .2s ease-in-out;
+}
+.img__border:hover::after{
+    background: rgb(151, 29, 29);
+    box-sizing: border-box;
+    /*border: 3px solid grey;*/
+}
+.img__border{
+  position: relative;
+  overflow: hidden;
+}
+.img__border::after{
+    content: '';
+    position: absolute;
+    bottom: -80%;
+    left: -10px;
+    width: 120%;
+    height: 100%;
+    transform: rotate(-15deg);
+    background: #ffffff;
+    transition: all .5s ease-in-out;
+}
+
+
+/*================ SCROLL =============*/
+
+/* width */
 ::-webkit-scrollbar {
   width: 10px;
-}*/
+}
 
-/* Track *
+/* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
-}*/
+  background: #f1f1f100; 
+}
  
-/* Handle *
+/* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--fonts); 
-}*/
+  background: var(--red);
+  border-radius: 15px; 
+}
 
-/* Handle on hover *
+/* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--gold);
+  background: rgb(151, 29, 29);
+}
+
+/*================ HAMBURGER =============*/
+
+/*.hamburger__box{
+  position: absolute;
+  top: 10px;
+  right: -10%;
 }*/
