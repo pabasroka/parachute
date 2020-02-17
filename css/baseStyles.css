@@ -1,0 +1,26 @@
+body{
+    background: var(--primary);
+    overflow-x: hidden;
+    font-family: 'Rubik Regular';
+}
+
+
+/* width *
+::-webkit-scrollbar {
+  width: 10px;
+}*/
+
+/* Track *
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}*/
+ 
+/* Handle *
+::-webkit-scrollbar-thumb {
+  background: var(--fonts); 
+}*/
+
+/* Handle on hover *
+::-webkit-scrollbar-thumb:hover {
+  background: var(--gold);
+}*/
