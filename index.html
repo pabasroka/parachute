@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,10 +39,38 @@
         <div class="navigation">
             <ul class="navigation__list">
                 <ul>
-                    <li><a href="#news">AKTUALNOŚCI</a></li>
-                    <li><a href="#courses">OBOZY / KURSY</a></li>
-                    <li><a href="#partnership">WSPÓŁPRACA</a></li>
-                    <li><a href="#contact">KONTAKT</a></li>
+                    <li>
+                        <a href="#news">
+                            AKTUALNOŚCI
+                        <span class="outer" aria-hidden="true">
+                            <span class="inner">AKTUALNOŚCI</span>
+                        </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#courses">
+                            OBOZY / KURSY
+                            <span class="outer" aria-hidden="true">
+                                <span class="inner">OBOZY / KURSY</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#partnership">
+                            WSPÓŁPRACA
+                            <span class="outer" aria-hidden="true">
+                                <span class="inner">WSPÓŁPRACA</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#contact">
+                            KONTAKT
+                            <span class="outer" aria-hidden="true">
+                                <span class="inner">KONTAKT</span>
+                            </span>
+                        </a>
+                    </li>
                 </ul>
         </div>
         
@@ -80,9 +108,56 @@
 
     <!--=====================      COURSES      ==================================-->
 
-    <section id="courses" class="grid">
+    <section id="courses">
             
-        <h2>  </h2>
+        <h2> KURSY </h2>
+
+
+        
+
+            <ul class="courses__list grid">
+
+                <li>
+                    <img class="img" src="../img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" alt="spadochron">
+                    <h4>SPADOCHRONOWY</h4>
+                </li>
+
+                <li>
+                    <img class="img" src="/img/spadochron/dobre/0da19f2e-56bf-4848-70cd-ccfe73a7feda.jpg" alt="spadochron">
+                    <h4>RATOWNICTWA</h4>
+                </li>
+
+                <li>
+                    <img class="img" src="/img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
+                    <h4>NURKOWY I PŁETWONURKOWY</h4>
+                </li>
+
+                <li>
+                    <img class="img" src="/img/spadochron/dobre/558095f7-5817-da3c-3544-e2497e934537.jpg" alt="spadochron">
+                    <h4>SKOSZAROWANE KURSY PRAWA JAZDY KATEGORII "C, C+E i D" WRAZ Z KWALIFIKACJAMI I ADR</h4>
+                </li>
+
+                <li>
+                    <img class="img" src="/img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
+                    <h4>OPERATORÓW SPRZĘTU DO ROBÓT ZIEMNYCH</h4>
+                </li>
+
+                <li>
+                    <img class="img" src="/img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
+                    <h4>OPERATORÓW SPRZĘTU DŹWIGOWO TRANSPORTOWYCH</h4>
+                </li>
+
+                <li>
+                    <img class="img" src="/img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
+                    <h4>KUCHARZ</h4>
+                </li>
+
+
+
+            </ul>
+
+          
+
 
     </section>
 
@@ -101,6 +176,21 @@
 
     <section id="contact">
         
+        <h3>Desantowa Jednostka Ratowniczo Gaśnicza</h3>
+
+        <p class="leading">Ul.Przysieki 4, Ożarowice, Polska</p>
+        <p>Telefon: <b>+48 690-030-351</b></p>
+        <p>E-mail: <a href="mailto:djrg@djrg.org.pl"><b>djrg@djrg.org.pl</b></a></p>
+        
+
+        <form id="contact-form" action="https://formspree.io/djrg@djrg.org.pl" method="post">
+            <input id="name" type="text" name="Imie: " placeholder="IMIĘ">
+            <input id="email" type="email" name="Od: " placeholder="E-MAIL">
+            <textarea id="content" rows="6" name="Wiadomosc: " placeholder="WIADOMOŚĆ"></textarea>           
+            <button class="button">WYŚLIJ WIADOMOŚĆ</button>
+        </form>
+
+
     </section>
 
 
@@ -114,6 +204,9 @@
     </footer>
 
 
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/hamburger.js"></script>
+    <script src="js/form.js"></script>
 </body>
 </html>

@@ -11,12 +11,12 @@ body{
 .site-nav{
     background: var(--bg2);
     padding: 10px;
-    -webkit-box-shadow: 0px 7px 13px -7px rgba(107,0,27,1);
-    -moz-box-shadow: 0px 7px 13px -7px rgba(107,0,27,1);
-    box-shadow: 0px 7px 13px -7px rgba(107,0,27,1);
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
 }
 .site-nav .logo{
-    grid-column: 1/3;
+    grid-column: 2/4;
     padding: 10px;
     align-self: center;
     justify-self: center;
@@ -29,18 +29,54 @@ body{
 }
 .navigation{
     padding-top: 5px;
-    grid-column: 5/13;
+    grid-column: 6/13;
 }
-.navigation a{
+/*.navigation a{
     color: var(--bg);
-    text-shadow: 1px 1px black;
+    /*text-shadow: 1px 1px white;
     letter-spacing: 3px;
     font-weight: bolder;
     font-size: 1.2em;
-}
+}*/
 .navigation li{
     padding-top: 5px;
 }
+.navigation__list a{
+  position: relative;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.4;
+  overflow: hidden;
+  color: white;
+  font-size: 1.2em;
+  text-shadow: -1px -1px 0 var(--grey), 1px -1px 0 var(--grey), -1px 1px 0 var(--grey), 1px 1px 0 var(--grey);
+}
+
+.navigation__list .outer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: var(--red);
+  transform: translateX(-100%);
+}
+.navigation__list .inner {
+  display: inline-block;
+  transform: translateX(100%);
+}
+.navigation__list a .outer,
+.navigation__list a .inner {
+  transition: transform 0.15s cubic-bezier(0.29, 0.73, 0.74, 1.02);
+}
+
+.navigation__list a:hover .outer,
+.navigation__list a:hover .inner {
+  transform: none;
+}
+
+
+
+
 
 
 
@@ -56,7 +92,8 @@ body{
     padding-top: 35px;
     text-align: center;
     grid-column: span 13;
-    font-size: 1.4em;
+    font-size: 1.7em;
+    font-weight: bolder;
 }
 #news h4{
     font-size: 1.2em;
@@ -80,11 +117,88 @@ body{
 /*==============   COURSES   ======================*/
 #courses{
     background: var(--bg2);
+    padding: 30px 20px;
+    -moz-box-shadow:    inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow:         inset 0 0 10px #000000;
 }
+#courses h2{
+    text-align: center;
+    font-size: 1.7em;
+    grid-column: span 13;
+    font-weight: bolder;
+}
+#courses h4{
+    text-align: center;
+    font-size: 0.8em;
+    padding: 8px;
+}
+#courses ul{
+    margin: 40px 0;
+}
+#courses li{
+    margin-bottom: 50px;
+    padding: 8px;
+    grid-column: span 6;
+    text-align: center;
+}
+#courses img{
+    width: 100%;
+    margin: 10px auto;
+}
+#courses li:nth-child(7){
+    grid-column: 4/10;
+}
+#courses .img{
+    transition: all .5s ease-in-out;
+}
+#courses .img:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+
+
 
 
 /*==============   PARTNERSHIP   ======================*/
 /*==============   CONTACT   ======================*/
+#contact{
+    padding: 30px 20px;
+    background: var(--bg);
+}
+#contact h3, #contact p{
+    text-align: center;
+}
+#contact h3{
+    margin: 20px;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+#contact p{
+    padding-top: 5px;
+    font-size: 1.3em;
+}
+#contact form{
+    padding-top: 30px;
+    width: 80%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+}
+#contact input, #contact textarea{
+    width: 100%;
+    margin: 10px 0;
+}
+#contact .button{
+    margin-top: 10px;
+}
+
+
+
+
 /*==============   FOOTER   ======================*/
 .footer{
     margin-top: 30px;
