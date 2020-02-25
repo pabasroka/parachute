@@ -8,6 +8,7 @@
     <meta name="keywords" content="Desantowa, Jednostka, Ratowniczo, Gaśnicza, Obrona, Terytorialna, Narodowe, Siły, Rezerwowe, szkoły , wojskowe, skoki, spadochronowe, kursy, szkolenia">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../img/logo.png">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Desantowa Jednostka Ratowniczo-Gaśnicza</title>
 </head>
@@ -100,7 +101,7 @@
         </div>
         
 
-        <p class="article">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente nam soluta quibusdam magni aspernatur maxime cumque in esse ab, consequatur neque perspiciatis ipsam dolore autem quo sunt delectus nihil id labore distinctio unde. Nisi vitae exercitationem inventore sint quod cupiditate corporis magni provident doloremque eaque, autem ipsa numquam vero!</p>
+        <p data-aos="fade-left" class="article appearLeft">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam sapiente nam soluta quibusdam magni aspernatur maxime cumque in esse ab, consequatur neque perspiciatis ipsam dolore autem quo sunt delectus nihil id labore distinctio unde. Nisi vitae exercitationem inventore sint quod cupiditate corporis magni provident doloremque eaque, autem ipsa numquam vero!</p>
         
     </section>
 
@@ -119,37 +120,37 @@
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" alt="spadochron">
-                    <h4>SPADOCHRONOWY</h4>
+                    <h4 class="visible">SPADOCHRONOWY</h4>
                 </li>
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/0da19f2e-56bf-4848-70cd-ccfe73a7feda.jpg" alt="spadochron">
-                    <h4>RATOWNICTWA</h4>
+                    <h4 class="visible">RATOWNICTWA</h4>
                 </li>
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
-                    <h4>NURKOWY I PŁETWONURKOWY</h4>
+                    <h4 class="visible">NURKOWY I PŁETWONURKOWY</h4>
                 </li>
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/558095f7-5817-da3c-3544-e2497e934537.jpg" alt="spadochron">
-                    <h4>SKOSZAROWANE KURSY PRAWA JAZDY KATEGORII "C, C+E i D" WRAZ Z KWALIFIKACJAMI I ADR</h4>
+                    <h4 class="visible">SKOSZAROWANE KURSY PRAWA JAZDY KATEGORII "C, C+E i D" WRAZ Z KWALIFIKACJAMI I ADR</h4>
                 </li>
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
-                    <h4>OPERATORÓW SPRZĘTU DO ROBÓT ZIEMNYCH</h4>
+                    <h4 class="visible">OPERATORÓW SPRZĘTU DO ROBÓT ZIEMNYCH</h4>
                 </li>
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
-                    <h4>OPERATORÓW SPRZĘTU DŹWIGOWO TRANSPORTOWYCH</h4>
+                    <h4 class="visible">OPERATORÓW SPRZĘTU DŹWIGOWO TRANSPORTOWYCH</h4>
                 </li>
 
                 <li>
                     <img class="img" src="./img/spadochron/dobre/30f9dd00-b061-d340-910c-9d308c3f4a8a.jpg" alt="spadochron">
-                    <h4>KUCHARZ</h4>
+                    <h4 class="visible">KUCHARZ</h4>
                 </li>
 
 
@@ -176,14 +177,14 @@
 
     <section id="contact">
         
-        <h3>Desantowa Jednostka Ratowniczo Gaśnicza</h3>
+        <h3 data-aos="fade-left" class="appearLeft">Desantowa Jednostka Ratowniczo Gaśnicza</h3>
 
-        <p class="leading">Ul.Przysieki 4, Ożarowice, Polska</p>
-        <p>Telefon: <b>+48 690-030-351</b></p>
-        <p>E-mail: <a href="mailto:djrg@djrg.org.pl"><b>djrg@djrg.org.pl</b></a></p>
+        <p data-aos="fade-left" class="appearLeft">Ul.Przysieki 4, Ożarowice, Polska</p>
+        <p data-aos="fade-left" class="appearLeft">Telefon: <b>+48 690-030-351</b></p>
+        <p data-aos="fade-left" class="appearLeft">E-mail: <a href="mailto:djrg@djrg.org.pl"><b>djrg@djrg.org.pl</b></a></p>
         
 
-        <form id="contact-form" action="https://formspree.io/djrg@djrg.org.pl" method="post">
+        <form  data-aos="fade-right" id="contact-form" action="https://formspree.io/djrg@djrg.org.pl" method="post">
             <input id="name" type="text" name="Imie: " placeholder="IMIĘ">
             <input id="email" type="email" name="Od: " placeholder="E-MAIL">
             <textarea id="content" rows="6" name="Wiadomosc: " placeholder="WIADOMOŚĆ"></textarea>           
@@ -203,6 +204,15 @@
         </p>
     </footer>
 
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+            offset: 400, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 1000 // values from 0 to 3000, with step 50ms
+        });
+</script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
