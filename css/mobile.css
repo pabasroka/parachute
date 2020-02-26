@@ -162,7 +162,6 @@ body{
 
 
 
-
 /*==============   PARTNERSHIP   ======================*/
 /*==============   CONTACT   ======================*/
 #contact{
@@ -212,4 +211,25 @@ body{
     text-align: center;
     align-self: end;
     justify-self: center;
+}
+
+
+#btnScrollToTop{
+    display: none;
+    transition: display 2s ease-in-out;
+}
+
+
+
+/*==============   MAIN   ======================*/
+#main{
+    background: var(--bg);
+    padding: 30px;
+}
+#main .mainHeading{
+    font-size: 1.5em;
+    margin: 20px;
+    padding-bottom: 25px;
+    text-align: center;
+    text-transform: uppercase;
 }

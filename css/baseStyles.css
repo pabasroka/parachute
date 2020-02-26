@@ -11,6 +11,48 @@ a:hover{
   transition: ease-in-out .2s all;
 }
 
+
+
+
+
+
+
+
+
+/*================ scroll button =============*/
+#btnScrollToTop{
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    width: 50px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--red);
+    box-shadow: 0 0 1px black;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    border: none;
+}
+#btnScrollToTop:active{
+    background: rgb(85, 0, 0);
+}
+.btnNav{
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ text appear =============*/
 
 .visible{
@@ -64,6 +106,21 @@ a:hover{
 
 */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ FORM =============*/
 
 input, textarea{
@@ -102,6 +159,26 @@ textarea:focus::-webkit-input-placeholder {
     color: var(--red);
     transition: all .2s ease-in-out;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -151,6 +228,25 @@ textarea:focus::-webkit-input-placeholder {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ IMG =============*/
 
 .img{
@@ -192,6 +288,27 @@ textarea:focus::-webkit-input-placeholder {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*================ SCROLL =============*/
 
 /* width */
@@ -206,14 +323,29 @@ textarea:focus::-webkit-input-placeholder {
  
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: var(--red);
+  background: var(--bg2);
   border-radius: 15px; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(151, 29, 29);
+  background: rgb(110, 66, 66);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*================ HAMBURGER =============*/
 
