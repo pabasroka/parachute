@@ -273,13 +273,6 @@ textarea:focus::-webkit-input-placeholder {
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
-.img__border:hover::after{
-    /*background: rgb(151, 29, 29);
-    box-sizing: border-box;
-    border: 3px solid grey;*/
-    /*opacity: 0;
-    transform: rotate(-5deg);*/
-}
 .img__border{
   position: relative;
   overflow: hidden;

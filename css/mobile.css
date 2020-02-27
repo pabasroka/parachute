@@ -146,6 +146,9 @@ body{
     font-size: 0.8em;
     padding: 8px;
 }
+#courses li:hover{
+    transform: scale(1.05);
+}
 #courses ul{
     margin: 40px 0;
 }
@@ -154,6 +157,8 @@ body{
     padding: 8px;
     grid-column: span 6;
     text-align: center;
+    transition: all .5s ease-in-out;
+    display: block;
 }
 #courses img{
     width: 100%;
@@ -162,17 +167,33 @@ body{
 #courses li:nth-child(7){
     grid-column: 4/10;
 }
-#courses .img{
-    transition: all .5s ease-in-out;
-}
-#courses .img:hover{
-    transform: scale(1.05);
-}
 #courses a{
     grid-column: span 6;
+    color: black;
+
+    position: relative;
+    overflow: hidden;
 }
+#courses a::after {
+  position: absolute;
+  z-index: -1;
+  content: '';
+  width: 80%;
+  height: 5px;
+  background: var(--grey);
+  border: .5px solid gray;
+  border-radius: 15px;
+  bottom: 0;
+  right: 40%;
+  transition: transform .5s ease-in-out;
+  will-change: transform;
 
-
+  opacity: 0;
+}
+#courses a:hover::after{
+  transform: translateX(40%);
+  opacity: 1;
+}
 
 
 
