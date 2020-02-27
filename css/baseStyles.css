@@ -250,7 +250,7 @@ textarea:focus::-webkit-input-placeholder {
 /*================ IMG =============*/
 
 .img{
-    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 117px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.75);
     border-radius: 2px;
@@ -264,12 +264,21 @@ textarea:focus::-webkit-input-placeholder {
     -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
 }
+.img__border:hover{
+  opacity: 1;
+    transition: all .2s ease-in-out;
+    transform: scale(1.01);
+    /*transform: rotate(5deg) scale(0.95);*/
+    -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.75);
+}
 .img__border:hover::after{
     /*background: rgb(151, 29, 29);
     box-sizing: border-box;
     border: 3px solid grey;*/
-    /*opacity: 0;*/
-    transform: rotate(-5deg);
+    /*opacity: 0;
+    transform: rotate(-5deg);*/
 }
 .img__border{
   position: relative;

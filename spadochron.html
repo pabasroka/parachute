@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="../img/logo.png">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="css/lightbox.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Kurs spadochronowy</title>
@@ -87,10 +88,18 @@
 
     <!--=====================      VIDEO      ==================================-->
 
-    <header class="video" class="grid">
+    <section id="subVideo">
 
+        <a href="https://www.youtube.com/watch?v=temRds68JMc">
+            <h2 class="mainHeading"> Kurs spadochronowy </h2>
+        </a>
 
-    </header>
+        <video src="./videos/videoplayback.mp4" type="video/mp4" class="subVideo" autoplay controls>
+            Twoja przeglądarka nie wspiera odtwarzania filmów. Tutaj jest <a href="https://www.youtube.com/watch?v=temRds68JMc&feature=emb_title">link do filmu</a> 
+        </video>
+
+    </section>
+    
 
     <!--===================        MAIN        ===================================-->
 
@@ -101,6 +110,47 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus, error vitae. Fugit odit labore, error unde illo et obcaecati nihil, impedit tempore voluptate fugiat eos ipsa dignissimos sapiente officiis architecto consequuntur perspiciatis. Voluptate, quod possimus ea, nam est laboriosam aliquam expedita doloremque ex, consequatur minus labore sed distinctio! Ab dicta tempore, porro repellat architecto voluptatum beatae. Odit excepturi non omnis maxime laboriosam minima eos, ducimus magnam consequuntur quidem atque a tenetur deleniti, beatae iure at asperiores molestias dolor nihil ipsum velit sunt fuga. Quo aspernatur perspiciatis excepturi repellendus quasi commodi pariatur aliquid ullam, expedita perferendis temporibus voluptatibus quisquam saepe, reiciendis ipsum! Fuga non hic, beatae voluptatum distinctio molestiae dignissimos impedit incidunt in aperiam recusandae alias odit natus earum itaque sequi placeat repellendus deleniti at amet quidem perferendis. Placeat aspernatur quibusdam veritatis repellat quis incidunt vitae est nihil quidem corporis ipsam earum sapiente quam debitis, iure molestiae aliquid hic recusandae accusamus quia fugit. Porro, accusamus ad similique quas doloribus vel autem corrupti eum iure corporis dicta cum in quidem vero, facere eos explicabo illum? Facilis provident quam ad in corporis temporibus aspernatur! Perferendis voluptates ratione error nemo laudantium praesentium eos commodi, quis doloremque iure, esse, aliquam libero quas aliquid quod? Corrupti!</p>
 
     </main>
+
+    <!--===================        GALLERY        ===================================-->
+
+    <section id="courses">
+
+        <h2> Galeria! </h2>
+
+        <ul class="courses__list grid">
+        
+            <a href="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" data-lightbox="mygallery" data-title="Spadochron">
+                <li>
+                    <img class="img" src="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" alt="spadochron">
+                </li>
+            </a>
+
+            <a href="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" data-lightbox="mygallery"
+                data-title="Spadochron">
+                <li>
+                    <img class="img" src="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" alt="spadochron">
+                </li>
+            </a>
+
+            <a href="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" data-lightbox="mygallery"
+                data-title="Spadochron">
+                <li>
+                    <img class="img" src="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" alt="spadochron">
+                </li>
+            </a>
+
+            <a href="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" data-lightbox="mygallery"
+                data-title="Spadochron">
+                <li>
+                    <img class="img" src="./img/spadochron/dobre/4af65db1-598e-6421-81db-120636b64f66.jpg" alt="spadochron">
+                </li>
+            </a>
+                
+        
+        
+        </ul>
+
+    </section>
 
 
     <!--=====================      FOOTER      ==================================-->
@@ -118,6 +168,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="js/aos.js"></script>
+    <script src="js/video.js"></script>
+    <script src="js/lightbox-plus-jquery.min.js"></script>
 </body>
-
 </html>
