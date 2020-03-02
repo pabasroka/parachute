@@ -80,11 +80,12 @@ body{
 /*==============   SUBPAGE VIDEO   ======================*/
 #subVideo{
     margin: 20px;
-    margin-top: 50px;  
-    background: var(--grey);
+    margin-top: 50px;    
 }
 .subVideo{
     width: 100%;
+    border: solid 5px var(--grey);
+    border-radius: 5px;
 }
 
 
@@ -199,7 +200,7 @@ body{
 
 
 
-/*==============   PARTNERSHIP   ======================*/
+
 /*==============   CONTACT   ======================*/
 #contact{
     padding: 30px 20px;
@@ -233,14 +234,67 @@ body{
 }
 
 
+/*==============   PARTNERSHIP   ======================*/
+#partnership{
+    background: rgb(26, 26, 26);
+}
+#partnership h2{
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    grid-column: span 13;
+    font-size: 1.5em;
+}
+#partnership hr{
+    margin: 0 auto;
+    grid-column: span 13;
+    width: 80vw;
+    border: none;
+    border-top: solid 5px rgb(49, 49, 49);  
+    border-radius: 5px;
+    margin: 50px;
+}
+#partnership p{
+    color: white;
+    grid-column: 7/13;
+    align-self: center;
+}
+#partnership img{
+    grid-column: 1/6;
+    width: 100%;
+    margin: 10px;
+    border: 5px solid rgb(49, 49, 49); 
+}
+#partnership img:hover{
+    border: 5px solid rgb(26, 26, 26);
+    transition: all .5s ease-in-out;
+}
+
+
 
 
 /*==============   FOOTER   ======================*/
 .footer{
-    margin-top: 30px;
     background: rgb(26, 26, 26);
     color: white;
     grid-column: span 12;
+    padding: 40px 0;
+}
+.footer .social{
+    grid-column: span 13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .social li{
+    margin: 10px;
+    font-size: 4em;
+}
+.footer .social li .fb:hover{
+    color: #3b5998;
+}
+.footer .social li .yt:hover{
+    color: #c4302b;
 }
 .copyright{
     grid-column: span 12;

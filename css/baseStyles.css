@@ -320,7 +320,7 @@ textarea:focus::-webkit-input-placeholder {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f100; 
+  background: #50020200; 
 }
  
 /* Handle */
