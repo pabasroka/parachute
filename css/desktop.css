@@ -1,7 +1,103 @@
 @media screen and (min-width: 1200px){
     
-    body{
-        font-size: 26px;
-    }
+body{
+    font-size: 26px;
+}
+
+.site-nav .logo{
+    width: 80px;
+}
+.navigation{
+    grid-column: 2/13;
+    padding-top: 20px;
+}
+.navigation__list li{
+    font-size: 0.9em;
+    grid-column: span 4;
+    margin-right: 50px;
+}
+
+
+
+
+
+
+#video{
+    display: none;
+    width: 25%;
+    text-align: center; 
+    margin-top: 20px;
+    background: var(--grey);
+}
+
+.video{
+    align-self: center;
+    justify-self: center;
+}
+
+
+
+
+#news{
+    padding-bottom: 50px;
+}
+#news .desktopImg{
+    grid-column: 1/6;
+    width: 80%;
+}
+#news .article{
+    grid-column: 6/13;
+}
+
+
+#news h1{
+    font-size: 1.4em;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+#news h4{
+    font-size: 1em;
+    padding-bottom: 60px;
+}
+
+
+
+
+
+
+
+
+#courses .grid{
+    grid-template-columns: repeat(13, 1fr);
+}
+#courses h2{
+    margin: 40px;
+    font-size: 1.5em;
+    grid-column: span 13;
+}
+#courses li{
+    margin-bottom: 50px;
+    padding: 8px;
+    grid-column: span 3;
+}
+#courses li:nth-child(3){
+    grid-column: 8/11;
+}
+#courses li:nth-child(5){
+    grid-column: 2/5;
+}
+#courses li:nth-child(6){
+    grid-column: 6/9;
+}
+#courses li:nth-child(7){
+    grid-column: 10/13;
+}
+#courses img{
+    width: 100%;
+}
+
+
+
+
     
 }

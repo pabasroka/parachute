@@ -34,7 +34,9 @@ body{
     font-size: 1.3em;
     padding-bottom: 40px;
 }
-
+#news img, .img__border{
+    width: 70vw;
+}
 #news .article{
     margin: 40px;
     grid-column: span 12;
@@ -43,6 +45,10 @@ body{
     padding: 20px;
 }
 
+
+#courses img{
+    width: 90%;
+}
 
 
 
