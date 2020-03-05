@@ -92,9 +92,12 @@ body{
 
 
 /*==============   NEWS   ======================*/
+/* Background pattern from Toptal Subtle Patterns 
+ This pattern is downloaded from www.subtlepatterns.com 
+ If you need more, that's where to get'em.*/
 #news{
-    background: url('../img/bg2.jpg');
-    background-size: cover;
+    background: url('../img/so-white.png');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: bottom; 
 }
@@ -144,6 +147,7 @@ body{
     font-size: 1.7em;
     grid-column: span 13;
     font-weight: bolder;
+    color: var(--white);
 }
 #courses h4{
     text-align: center;
@@ -173,7 +177,7 @@ body{
 }
 #courses a{
     grid-column: span 6;
-    color: black;
+    color: var(--white);
 
     position: relative;
     overflow: hidden;
@@ -239,6 +243,24 @@ body{
 #contact .button{
     margin-top: 10px;
 }
+#contact .rodo{
+    font-size: 0.5em;
+}
+#contact .rodoClick{
+    text-decoration: underline;
+}
+#contact .rodoClick:hover{
+    color: var(--red);
+    cursor: pointer;
+}
+#contact .rodoInfo{
+    font-size: 0.8em;
+}
+
+
+
+
+
 
 
 /*==============   PARTNERSHIP   ======================*/

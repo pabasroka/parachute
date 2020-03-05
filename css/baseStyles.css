@@ -331,7 +331,7 @@ textarea:focus::-webkit-input-placeholder {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(110, 66, 66);
+  background: #262721;
 }
 
 
