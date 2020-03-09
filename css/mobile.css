@@ -427,9 +427,6 @@ body{
     transition: all .5s ease-in-out;
     display: block;
 }
-#gallery li > *{
-    grid-column: span 6;
-}
 #gallery img{
     width: 100%;
     margin: 10px auto;
