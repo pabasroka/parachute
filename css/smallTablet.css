@@ -61,7 +61,12 @@ body{
     padding-top: 10px;
     font-size: 1.65em;
 }
-
+#contact .rodo{
+    font-size: 0.8em;
+}
+#partnership img{
+    width: 80%;
+}
 
 
 .copyright{
@@ -71,7 +76,14 @@ body{
 
 
 
-
+.subVideo{
+    align-self: center;
+    justify-self: center;
+    width: 80%;
+}
+#subVideo h2{
+    font-size: 1.7em;
+}
 
 
 

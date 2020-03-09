@@ -103,6 +103,9 @@ body{
     padding-top: 25px;
     font-size: 1em;
 }
+#contact .rodo{
+    font-size: 0.7em;
+}
 
 input, textarea{
     padding: 10px;
@@ -122,13 +125,12 @@ input, textarea{
     font-size: 1.3em;
 }
 #partnership img{
-    width: 70%;
+    width: 60%;
     margin-left: 50px;
 }
 #partnership p{
     font-size: 0.9em;
 }
-
 
 
 
@@ -141,6 +143,36 @@ input, textarea{
     font-size: 3em;
 }
 
+
+
+.subVideo{
+    align-self: center;
+    justify-self: center;
+    width: 50%;
+}
+#subVideo h2{
+    font-size: 1.3em;
+}
+
+
+
+
+#gallery h2{
+    margin: 40px;
+    font-size: 1.5em;
+    grid-column: span 13;
+}
+#gallery li{
+    margin-bottom: 50px;
+    padding: 8px;
+    grid-column: span 4;
+}
+#gallery img{
+    width: 100%;
+}
+#gallery li > *{
+    grid-column: span 4;
+}
 
 
 }
