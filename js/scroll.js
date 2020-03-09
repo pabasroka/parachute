@@ -28,7 +28,7 @@ function scrollIt(element) {
 
 
 
-const btnScrollToTop = document.querySelector('#btnScrollToTop');
+const btnScrollToTop = document.querySelector('.btnScrollToTop');
 btnScrollToTop.addEventListener("click", () => window.scrollTo({
     'behavior': 'smooth',
     'left': 0,
@@ -37,7 +37,7 @@ btnScrollToTop.addEventListener("click", () => window.scrollTo({
 
 /* DISPLAY / HIDE ARROW*/
 
-const displayArrow = document.getElementById("btnScrollToTop");
+const displayArrow = document.querySelector(".btnScrollToTop");
 window.addEventListener('scroll', () => {
 
     if (window.scrollY >= 1000) {
